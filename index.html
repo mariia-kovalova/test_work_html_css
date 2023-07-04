@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="flex">
+    <div class="flex__item">
+      <header class="page-header">
+        <h1 class="main-title">Start</h1>
+      </header>
+
+      <main class="page-main">
+        <section class="states">
+          <!-- visually hidden h2 -->
+          <h2 class="visually-hidden">Стани</h2>
+
+          <ul class="states__list">
+            <li class="state">
+              <div class="state_status state_status--active"></div>
+              <p class="state__title">Стан1</p>
+            </li>
+            <li class="state">
+              <div class="state_status state_status--active"></div>
+              <p class="state__title">Стан2</p>
+            </li>
+            <li class="state">
+              <div class="state_status state_status--next"></div>
+              <p class="state__title">Стан3</p>
+            </li>
+            <li class="state">
+              <div class="state_status"></div>
+              <p class="state__title">Стан4</p>
+            </li>
+            <li class="state">
+              <div class="state_status"></div>
+              <p class="state__title">Стан5</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="order">
+          <div class="details">
+            <h2 class="details__title">Information</h2>
+            <ul class="details__list">
+              <li class="details__item">
+                <p class="details__label">Info Number:</p>
+                <p class="details__data">903049</p>
+              </li>
+              <li class="details__item">
+                <p class="details__label">Pick up Place:</p>
+                <p class="details__data">Sweden</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="delivery">
+            <div>
+              <p class="delivery__title">We are here</p>
+              <p class="delivery__subtitle">Long time to go</p>
+            </div>
+            <div class="delivery__img"></div>
+          </div>
+        </section>
+
+        <section class="reorder">
+          <h2 class="reorder__title">Перезамовте Багаж</h2>
+          <form>
+            <div class="reorder__group">
+              <label class="reorder__label" for="dropdown1">Дропдаун</label>
+              <select class="reorder__dropdown" name="dropdown1" id="dropdown1">
+                <option class="reorder__option" value="" selected disabled hidden>
+                  Select option
+                </option>
+                <option class="reorder__option" value="value1">Value 1</option>
+                <option class="reorder__option" value="value2">Value 2</option>
+                <option class="reorder__option" value="value3">Value 3</option>
+              </select>
+            </div>
+
+            <div class="reorder__group">
+              <label class="reorder__label" for="dropdown2">Дропдаун</label>
+              <select class="reorder__dropdown" name="dropdown2" id="dropdown2">
+                <option class="reorder__option" value="" selected disabled hidden>
+                  Select option
+                </option>
+                <option class="reorder__option" value="value1">Value 1</option>
+                <option class="reorder__option" value="value2">Value 2</option>
+                <option class="reorder__option" value="value3">Value 3</option>
+              </select>
+            </div>
+
+            <button class="reorder__btn" type="submit">Done</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <div class="flex__item">
+      <aside class="page-aside">
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href=""><svg class="site-nav__icon" width="24" height="24"
+                  aria-label="Перемикач головної сторінки">
+                  <use href="./images/sprite.svg#icon-home" />
+                </svg>Головна</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href=""><svg class="site-nav__icon" width="24"
+                  height="24" aria-label="Перемикач сторінки 1">
+                  <use href="./images/sprite.svg#icon-page1" />
+                </svg>Сторінка1</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href=""><svg class="site-nav__icon" width="24" height="24"
+                  aria-label="Перемикач сторінки 2">
+                  <use href="./images/sprite.svg#icon-page2" />
+                </svg>Сторінка2</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href=""><svg class="site-nav__icon" width="24" height="24"
+                  aria-label="Перемикач сторінки 3">
+                  <use href="./images/sprite.svg#icon-page3" />
+                </svg>Сторінка3</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <footer class="page-footer">
+        <nav class="site-nav">
+          <a class="site-nav__link" href="">
+            <svg class="site-nav__icon" width="24" height="24" aria-label="Перемикач налаштувань">
+              <use href="./images/sprite.svg#icon-settings" />
+            </svg>Налаштування</a>
+        </nav>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
